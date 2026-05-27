@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @theme {
   --color-light-coffee: #c89f94;
   --font-sans: 'Barlow', sans-serif;
@@ -57,7 +58,7 @@ body {
     @apply mb-2 text-gray-600 text-sm md:text-base max-w-7xl;
   }
   .lp-product1 {
-    @apply group relative w-[250px] md:w-[400px] shrink-0 cursor-pointer snap-center bg-white border border-transparent hover:border-black p-1 transition-all duration-300 ease-in-out;
+    @apply relative w-[250px] md:w-[400px] shrink-0 cursor-pointer snap-center bg-white border border-transparent hover:border-black p-1 transition-all duration-300 ease-in-out;
   }
 }
 @layer utilities {
