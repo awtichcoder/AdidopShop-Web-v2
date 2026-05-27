@@ -1,9 +1,76 @@
 @import 'tailwindcss';
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @theme {
-  --color-primary: #ff6600;
-  --color-secondary: #333333;
+  --color-light-coffee: #c89f94;
+  --font-sans: 'Barlow', sans-serif;
+}
+html,
+body {
+  font-family: var(--font-sans);
+}
+@layer components {
+  .btn-primary {
+    @apply px-6 py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 transition-all active:scale-95 shadow-md;
+  }
+  .ct-subheadline {
+    @apply flex justify-center items-center mb-24;
+  }
 
-  /* Định nghĩa font chữ custom nếu thích */
-  --font-display: 'Inter', sans-serif;
+  .ct-subheadline-deco-line {
+    @apply w-8 h-px bg-gray-200;
+  }
+
+  .ct-subheadline-deco-label {
+    @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-xs;
+  }
+  .ct-button {
+    @apply text-center uppercase tracking-wider py-4 px-8 text-sm cursor-pointer font-semibold hover:bg-white/75;
+  }
+  .ct-menuToggle {
+    @apply rounded-md p-3 hover:bg-[#232323] transition-opacity;
+  }
+  .ct-tabBtn {
+    @apply text-white px-3 py-1.5 rounded-sm cursor-pointer transition-all duration-200;
+  }
+  .ct-sidebar-link {
+    @apply cursor-pointer hover:text-white transition-colors;
+  }
+  .ct-Customize-Shoes1 {
+    @apply flex flex-col;
+  }
+  .ct-Customize-Shoes2 {
+    @apply w-full h-96 flex items-center justify-center overflow-hidden;
+  }
+  .ct-shoesImg {
+    @apply max-h-full object-contain;
+  }
+  .ct-Customize-Shoes3 {
+    @apply text-2xl font-bold uppercase tracking-tight mb-2 text-center;
+  }
+  .ct-Customize-Shoes4 {
+    @apply text-gray-600 text-xs md:text-sm leading-relaxed;
+  }
+  .ct-heading1 {
+    @apply mb-2 text-2xl md:text-5xl tracking-tight font-black;
+  }
+  .ct-para {
+    @apply mb-2 text-gray-600 text-sm md:text-base max-w-7xl;
+  }
+  .lp-product1 {
+    @apply group relative w-[250px] md:w-[400px] shrink-0 cursor-pointer snap-center bg-white border border-transparent hover:border-black p-1 transition-all duration-300 ease-in-out;
+  }
+}
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply h-2;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-gray-100 rounded-full;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
 }
