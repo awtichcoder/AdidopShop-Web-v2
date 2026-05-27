@@ -3,9 +3,410 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div
-    class="m-10 p-6  h-[1000px] max-w-sm mx-auto bg-amber-500 rounded-xl shadow-lg flex items-center space-x-4 border border-slate-200">
-    <div class="text-xl font-medium text-black">MenuQR Project</div>
-    <p class="text-slate-500">Tailwind v4 đã hoạt động!</p>
-</div>
-<a href="/Account/Login" class="text-amber-300">Privac y</a>
+<div id="Video-Slider" class="relative w-full h-screen overflow-hidden mb-24 bg-zinc-900">
+
+    <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+        <source src="~/videos/videoBanner2.mp4" type="video/mp4">
+        Video loading...
+    </video>
+    <div class="relative z-10 flex flex-col justify-center items-center h-full text-center bg-black/40 px-4">
+        <h1 class=" text-5xl md:text-7xl text-white font-black uppercase tracking-tighter italic animate-pulse">Adidop
+            Collection
+        </h1>
+        <p class="max-w-lg text-zinc-200 mt-3.5 text-xl">Ready to break boundaries with this summer's latest sneaker
+            collection.
+        </p>
+        <div class="mt-10 flex gap-4">
+            <a href=""
+               class="bg-white text-black px-7 py-3 font-bold uppercase text-sm  hover:bg-gray-200 transition-colors">shop
+                now</a>
+                <a href=""
+                   class="bg-transparent border-2 border-white text-white px-8 py-3 font-bold uppercase text-sm hover:bg-white hover:text-black transition-colors">store
+                    locator
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="Customize-Shoes" class="mb-24 mx-5   ">
+        <h1 class="ct-heading1 ">How to Customize</h1>
+        <p class="ct-para">There's no wrong way to customize. Check out the easy
+            steps below
+            to get
+            started.(Heads
+            up, it'll take about 3-5
+            weeks to build your unique pair).
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12  ">
+            <div class="ct-Customize-Shoes1">
+                <div class="ct-Customize-Shoes2">
+                    <img class="ct-shoesImg" src="./images/media/Customize1.webp" alt="">
+                </div>
+                <h3 class="ct-Customize-Shoes3">
+                    1. Pick Your Shoe Style
+                </h3>
+                <p class="ct-Customize-Shoes4 text-center">Choose from our classics or a more modern style.</p>
+            </div>
+            <div class="ct-Customize-Shoes1">
+                <div class="ct-Customize-Shoes2">
+                    <img class="ct-shoesImg" src="./images/media/Customize2.webp" alt="">
+                </div>
+                <h3 class="ct-Customize-Shoes3">
+                    2. Select Any Upgrades
+
+                </h3>
+                <p class="ct-Customize-Shoes4 text-center"> Level up with comfort, performance, platform or width.</p>
+            </div>
+            <div class="ct-Customize-Shoes1">
+                <div class="ct-Customize-Shoes2">
+                    <img class="ct-shoesImg" src="./images/media/Customize3.webp" alt="">
+                </div>
+                <h3 class="ct-Customize-Shoes3">
+                    3. Make Them Yours
+
+                </h3>
+                <p class="ct-Customize-Shoes4 text-center">Choose from 90+ colors, patterns and materials.</p>
+            </div>
+
+            
+        </div>
+
+        
+
+    </div>
+    <div id="Add-Your-Image" class=" mb-24 mx-5 grid grid-cols-2 items-center justify-items-center">
+        <div class="flex flex-col justify-center ">
+            <h1 class="ct-heading1 mb-2">Add Your Image</h1>
+            <p class="ct-Customize-Shoes4 mb-2 max-w-[400px]">Upload your own photos and artwork to truly personalize your
+                favorite Vans
+                styles.
+            </p>
+            <a href=""
+               class=" w-[150px] bg-[#221F1F] text-white px-7 py-3 font-bold uppercase text-center  text-sm  hover:bg-neutral-700 transition-colors ">
+                Get stared</a>
+            </div>
+            <div>
+                <video autoplay loop muted playsinline class="object-cover w-full max-w-[700px]"
+                       src="~/videos/videoBanner1.mp4"></video>
+            </div>
+        </div>
+        <div id="Blank-Canvas" class="mb-24 mx-5">
+            <h1 class="ct-heading1 mb-2">Get Started with a Blank Canvas</h1>
+            <p class="ct-para">Create your unique pair of Vans and show off your own personal style.</p>
+            <div id="list-product" class="">
+                <div class=" mx-auto px-4 py-16">
+                    <!-- Thay class .custom-scrollbar bằng đoạn arbitrary variants dưới đây -->
+                    <div class="flex overflow-x-auto gap-4 pb-8 snap-x snap-mandatory 
+                        [&::-webkit-scrollbar]:h-2 
+                        [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-track]:rounded-full 
+                        [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb]:rounded-full 
+                        [&::-webkit-scrollbar-thumb:hover]:bg-gray-400">
+                        <a href="">
+                            <div
+                                class="group relative w-[250px] md:w-[400px] shrink-0 cursor-pointer snap-center bg-white border border-transparent hover:border-black p-1 transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" relative mb-4 flex h-[300px] md:h-[500px] w-full items-center justify-center overflow-hidden bg-[#ebedee]">
+                                    <img class="absolute inset-0 h-full w-full object-cover opacity-100  mix-blend-multiply transition-opacity duration-500 group-hover:opacity-0 "
+                                         src="./images/products/giay2.webp" alt="">
+                                    <img class="absolute inset-0 h-full w-full object-cover opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
+                                         src="./images/products/giay1.webp" alt="">
+                                </div>
+                                <div class="flex flex-col gap-1 px-1">
+                                    <p class="text-lg font-bold text-gray-900">1.200.000₫</p>
+                                    <h3 class="truncate text-base font-medium text-gray-800">Dép Adilette Comfort 2.0
+                                        Spain
+                                    </h3>
+                                    <p class="text-sm text-gray-500">Sportswear</p>
+                                    <p class="mt-1 text-sm font-medium text-[#005c8a]">Mới</p>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a href="">
+                            <div
+                                class="group relative w-[250px] md:w-[400px] shrink-0 cursor-pointer snap-center bg-white border border-transparent hover:border-black p-1 transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" relative mb-4 flex h-[300px] md:h-[500px] w-full items-center justify-center overflow-hidden bg-[#ebedee]">
+                                    <img class="absolute inset-0 h-full w-full object-cover opacity-100  mix-blend-multiply transition-opacity duration-500 group-hover:opacity-0 "
+                                         src="./images/products/giay2.webp" alt="">
+                                    <img class="absolute inset-0 h-full w-full object-cover opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
+                                         src="./images/products/giay1.webp" alt="">
+                                </div>
+                                <div class="flex flex-col gap-1 px-1">
+                                    <p class="text-lg font-bold text-gray-900">1.200.000₫</p>
+                                    <h3 class="truncate text-base font-medium text-gray-800">Dép Adilette Comfort 2.0
+                                        Spain
+                                    </h3>
+                                    <p class="text-sm text-gray-500">Sportswear</p>
+                                    <p class="mt-1 text-sm font-medium text-[#005c8a]">Mới</p>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a href="">
+                            <div
+                                class="group relative w-[250px] md:w-[400px] shrink-0 cursor-pointer snap-center bg-white border border-transparent hover:border-black p-1 transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" relative mb-4 flex h-[300px] md:h-[500px] w-full items-center justify-center overflow-hidden bg-[#ebedee]">
+                                    <img class="absolute inset-0 h-full w-full object-cover opacity-100  mix-blend-multiply transition-opacity duration-500 group-hover:opacity-0 "
+                                         src="./images/products/giay2.webp" alt="">
+                                    <img class="absolute inset-0 h-full w-full object-cover opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
+                                         src="./images/products/giay1.webp" alt="">
+                                </div>
+                                <div class="flex flex-col gap-1 px-1">
+                                    <p class="text-lg font-bold text-gray-900">1.200.000₫</p>
+                                    <h3 class="truncate text-base font-medium text-gray-800">Dép Adilette Comfort 2.0
+                                        Spain
+                                    </h3>
+                                    <p class="text-sm text-gray-500">Sportswear</p>
+                                    <p class="mt-1 text-sm font-medium text-[#005c8a]">Mới</p>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a href="">
+                            <div
+                                class="group relative w-[250px] md:w-[400px] shrink-0 cursor-pointer snap-center bg-white border border-transparent hover:border-black p-1 transition-all duration-300 ease-in-out">
+                                <div
+                                    class=" relative mb-4 flex h-[300px] md:h-[500px] w-full items-center justify-center overflow-hidden bg-[#ebedee]">
+                                    <img class="absolute inset-0 h-full w-full object-cover opacity-100  mix-blend-multiply transition-opacity duration-500 group-hover:opacity-0 "
+                                         src="./images/products/giay2.webp" alt="">
+                                    <img class="absolute inset-0 h-full w-full object-cover opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
+                                         src="./images/products/giay1.webp" alt="">
+                                </div>
+                                <div class="flex flex-col gap-1 px-1">
+                                    <p class="text-lg font-bold text-gray-900">1.200.000₫</p>
+                                    <h3 class="truncate text-base font-medium text-gray-800">Dép Adilette Comfort 2.0
+                                        Spain
+                                    </h3>
+                                    <p class="text-sm text-gray-500">Sportswear</p>
+                                    <p class="mt-1 text-sm font-medium text-[#005c8a]">Mới</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        
+                        
+                        
+                        <a href="">
+                            <div
+                                class="relative shrink-0 w-[250px] md:w-[400px] p-1 bg-white  cursor-pointer group transition-all duration-300 ease-out snap-center border border-transparent hover:border-black">
+                                <div
+                                    class="w-full h-[300px] md:h-[500px] bg-[#ebedee] flex items-center justify-center overflow-hidden mb-4 relative">
+
+                                    <img src="./images/products/giay2.webp" alt="Dép Adilette 1"
+                                         class="absolute inset-0 w-full h-full object-cover mix-blend-multiply transition-opacity duration-500 opacity-100 group-hover:opacity-0" />
+
+                                    <img src="./images/products/giay1.webp" alt="Dép Adilette 2"
+                                         class="absolute inset-0 w-full h-full object-cover mix-blend-multiply transition-opacity duration-500 opacity-0 group-hover:opacity-100" />
+
+                                </div>
+
+                                <div class="flex flex-col gap-1 px-1">
+                                    <p class="font-bold text-gray-900 text-lg">1.200.000₫</p>
+                                    <h3 class="text-gray-800 font-medium text-base truncate">Dép Adilette Comfort 2.0 Spain</h3>
+                                    <p class="text-gray-500 text-sm">Sportswear</p>
+                                    <p class="text-[#005c8a] text-sm mt-1 font-medium">Mới</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                
+
+            </div>
+        </div>
+        <div id="Customs-for-Kids" class="mb-24 mx-5">
+            <div id="Add-Your-Image" class=" mb-15 mx-5 grid grid-cols-2 items-center justify-items-center">
+                <div class="flex flex-col justify-center ">
+                    <h1 class="ct-heading1 mb-2">Customs for Kids</h1>
+                    <p class="ct-Customize-Shoes4 mb-2 max-w-[400px]">Flex big imaginations for your little ones. Select colors,
+                        illustrations and your own images to make one-of-a-kind shoes.
+                    </p>
+                    <a href=""
+                       class=" w-[150px] bg-[#221F1F] text-white px-7 py-3 font-bold uppercase text-center  text-sm  hover:bg-neutral-700 transition-colors ">
+                        Get stared</a>
+                    </div>
+                    <div>
+                        <video autoplay loop muted playsinline class="object-cover w-full max-w-[700px]"
+                               src="~/videos/videoBanner4.mp4"></video>
+                    </div>
+                </div>
+                <div id="Blank-Canvas" class="mb-15 mx-5">
+                    <p class="ct-para">Iconic Styles, Uniquely You</p>
+                    <div id="list-product" class="">
+                        <div class=" mx-auto px-4 py-6">
+                            <!-- Thay class .custom-scrollbar bằng đoạn arbitrary variants dưới đây -->
+                            <div class="flex overflow-x-auto gap-4 pb-8 snap-x snap-mandatory 
+                                [&::-webkit-scrollbar]:h-2 
+                                [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-track]:rounded-full 
+                                [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-thumb]:rounded-full 
+                                [&::-webkit-scrollbar-thumb:hover]:bg-gray-400">
+                                <a href="">
+                                    <div
+                                        class="group relative w-[250px] md:w-[400px] shrink-0 cursor-pointer snap-center bg-white border border-transparent hover:border-black p-1 transition-all duration-300 ease-in-out">
+                                        <div
+                                            class=" relative mb-4 flex h-[300px] md:h-[500px] w-full items-center justify-center overflow-hidden bg-[#ebedee]">
+                                            <img class="absolute inset-0 h-full w-full object-cover opacity-100  mix-blend-multiply transition-opacity duration-500 group-hover:opacity-0 "
+                                                 src="./images/products/giay2.webp" alt="">
+                                            <img class="absolute inset-0 h-full w-full object-cover opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
+                                                 src="./images/products/giay1.webp" alt="">
+                                        </div>
+                                        <div class="flex flex-col gap-1 px-1">
+                                            <p class="text-lg font-bold text-gray-900">1.200.000₫</p>
+                                            <h3 class="truncate text-base font-medium text-gray-800">Dép Adilette Comfort 2.0
+                                                Spain
+                                            </h3>
+                                            <p class="text-sm text-gray-500">Sportswear</p>
+                                            <p class="mt-1 text-sm font-medium text-[#005c8a]">Mới</p>
+                                        </div>
+                                    </div>
+
+                                </a>
+                                <a href="">
+                                    <div
+                                        class="group relative w-[250px] md:w-[400px] shrink-0 cursor-pointer snap-center bg-white border border-transparent hover:border-black p-1 transition-all duration-300 ease-in-out">
+                                        <div
+                                            class=" relative mb-4 flex h-[300px] md:h-[500px] w-full items-center justify-center overflow-hidden bg-[#ebedee]">
+                                            <img class="absolute inset-0 h-full w-full object-cover opacity-100  mix-blend-multiply transition-opacity duration-500 group-hover:opacity-0 "
+                                                 src="./images/products/giay2.webp" alt="">
+                                            <img class="absolute inset-0 h-full w-full object-cover opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
+                                                 src="./images/products/giay1.webp" alt="">
+                                        </div>
+                                        <div class="flex flex-col gap-1 px-1">
+                                            <p class="text-lg font-bold text-gray-900">1.200.000₫</p>
+                                            <h3 class="truncate text-base font-medium text-gray-800">Dép Adilette Comfort 2.0
+                                                Spain
+                                            </h3>
+                                            <p class="text-sm text-gray-500">Sportswear</p>
+                                            <p class="mt-1 text-sm font-medium text-[#005c8a]">Mới</p>
+                                        </div>
+                                    </div>
+
+                                </a>
+                                <a href="">
+                                    <div
+                                        class="group relative w-[250px] md:w-[400px] shrink-0 cursor-pointer snap-center bg-white border border-transparent hover:border-black p-1 transition-all duration-300 ease-in-out">
+                                        <div
+                                            class=" relative mb-4 flex h-[300px] md:h-[500px] w-full items-center justify-center overflow-hidden bg-[#ebedee]">
+                                            <img class="absolute inset-0 h-full w-full object-cover opacity-100  mix-blend-multiply transition-opacity duration-500 group-hover:opacity-0 "
+                                                 src="./images/products/giay2.webp" alt="">
+                                            <img class="absolute inset-0 h-full w-full object-cover opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
+                                                 src="./images/products/giay1.webp" alt="">
+                                        </div>
+                                        <div class="flex flex-col gap-1 px-1">
+                                            <p class="text-lg font-bold text-gray-900">1.200.000₫</p>
+                                            <h3 class="truncate text-base font-medium text-gray-800">Dép Adilette Comfort 2.0
+                                                Spain
+                                            </h3>
+                                            <p class="text-sm text-gray-500">Sportswear</p>
+                                            <p class="mt-1 text-sm font-medium text-[#005c8a]">Mới</p>
+                                        </div>
+                                    </div>
+
+                                </a>
+                                <a href="">
+                                    <div
+                                        class="group relative w-[250px] md:w-[400px] shrink-0 cursor-pointer snap-center bg-white border border-transparent hover:border-black p-1 transition-all duration-300 ease-in-out">
+                                        <div
+                                            class=" relative mb-4 flex h-[300px] md:h-[500px] w-full items-center justify-center overflow-hidden bg-[#ebedee]">
+                                            <img class="absolute inset-0 h-full w-full object-cover opacity-100  mix-blend-multiply transition-opacity duration-500 group-hover:opacity-0 "
+                                                 src="./images/products/giay2.webp" alt="">
+                                            <img class="absolute inset-0 h-full w-full object-cover opacity-0 mix-blend-multiply transition-opacity duration-500 group-hover:opacity-100"
+                                                 src="./images/products/giay1.webp" alt="">
+                                        </div>
+                                        <div class="flex flex-col gap-1 px-1">
+                                            <p class="text-lg font-bold text-gray-900">1.200.000₫</p>
+                                            <h3 class="truncate text-base font-medium text-gray-800">Dép Adilette Comfort 2.0
+                                                Spain
+                                            </h3>
+                                            <p class="text-sm text-gray-500">Sportswear</p>
+                                            <p class="mt-1 text-sm font-medium text-[#005c8a]">Mới</p>
+                                        </div>
+                                    </div>
+
+                                </a>
+
+                        
+                        
+                        
+                                <a href="">
+                                    <div
+                                        class="relative shrink-0 w-[250px] md:w-[400px] p-1 bg-white  cursor-pointer group transition-all duration-300 ease-out snap-center border border-transparent hover:border-black">
+                                        <div
+                                            class="w-full h-[300px] md:h-[500px] bg-[#ebedee] flex items-center justify-center overflow-hidden mb-4 relative">
+
+                                            <img src="./images/products/giay2.webp" alt="Dép Adilette 1"
+                                                 class="absolute inset-0 w-full h-full object-cover mix-blend-multiply transition-opacity duration-500 opacity-100 group-hover:opacity-0" />
+
+                                            <img src="./images/products/giay1.webp" alt="Dép Adilette 2"
+                                                 class="absolute inset-0 w-full h-full object-cover mix-blend-multiply transition-opacity duration-500 opacity-0 group-hover:opacity-100" />
+
+                                        </div>
+
+                                        <div class="flex flex-col gap-1 px-1">
+                                            <p class="font-bold text-gray-900 text-lg">1.200.000₫</p>
+                                            <h3 class="text-gray-800 font-medium text-base truncate">Dép Adilette Comfort 2.0 Spain
+                                            </h3>
+                                            <p class="text-gray-500 text-sm">Sportswear</p>
+                                            <p class="text-[#005c8a] text-sm mt-1 font-medium">Mới</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                
+
+                    </div>
+                </div>
+            </div>
+            <div class="History mb-24">
+                <div id="Add-Your-Image" class=" mb-15 mx-5 grid grid-cols-2 items-center justify-items-center">
+                    <div class="flex flex-col justify-center ">
+                        <h1 class="ct-heading1 mb-2">Customade Since &lsquo;66</h1>
+                        <p class="ct-Customize-Shoes4 mb-2 max-w-[400px]">Since 1966, we&rsquo;ve encouraged people to do their
+                            thing.
+                            Today, that tradition continues with our online customization platform. Upload personal photos. Add
+                            embroidered details. Pick a range of colors. Whatever you do, make sure your shoes feel like you.
+                        </p>
+                        <a href=""
+                           class=" w-[150px] bg-[#221F1F] text-white px-7 py-3 font-bold uppercase text-center  text-sm  hover:bg-neutral-700 transition-colors ">
+                            Get stared</a>
+                        </div>
+                        <div>
+                            <img class="object-cover w-full max-w-[700px]" src="./images/media/logo2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="subscribe-us h-[350px] bg-black flex flex-col justify-center items-center mb-12">
+                        <div class="flex justify-center items-center px-6 min-[480px]:px-0 mb-6 ">
+                            <div class="w-8 h-px bg-gray-700 "></div>
+                            <div class="uppercase mx-4 tracking-widest text-gray-400 font-bold text-xs text-center">
+                                Sign up and get a free shoe care kit.
+
+                            </div>
+                            <div class="w-8 h-px bg-gray-700"></div>
+                        </div>
+                        <div class="font-medium text-4xl text-white mb-6">Shoe Care Updates</div>
+                        <div class="ct-form">
+                            <div class="flex flex-col md:flex-row justify-center items-center gap-3">
+                                <div class="ct-form-item text-center">
+                                    <input type="email" placeholder="awtichcoder@gmail.com" class=" px-6 py-4 w-[350px] min-[480px]:max-w-full max-w-[80%] bg-inherit border-[1px] border-gray-700 outline-none text-white leading-5 hover:border-gray-300 duration-500 focus:border-gray-300 placeholder:uppercase placeholder:text-xs
+                                    placeholder:tracking-widest placeholder:font-semibold">
+                                </div>
+                                <div class="ct-form-item">
+                                    <button type="submit"
+                                            class="ct-button bg-white text-gray-900 w-max max-h-[54px] hover:bg-zinc-300">Subscribe</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
