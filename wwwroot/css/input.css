@@ -30,6 +30,9 @@ body {
   .ct-menuToggle {
     @apply rounded-md p-3 hover:bg-[#232323] transition-opacity;
   }
+  .ct-menuToggle1 {
+    @apply rounded-md p-3 hover:bg-[#F3F4F6] transition-opacity;
+  }
   .ct-tabBtn {
     @apply text-white px-3 py-1.5 rounded-sm cursor-pointer transition-all duration-200;
   }
