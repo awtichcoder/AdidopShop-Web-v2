@@ -72,7 +72,7 @@ If the automated backend update aborts during setup, force a manual update:
 2. Execute the following system command:
 ```bash
    wsl --update
-
+```
 # 📁 Lưu ý về cấu trúc
 
 wwwroot/css/tailwind.css: File CSS gốc (Chứa @import "tailwindcss";).
