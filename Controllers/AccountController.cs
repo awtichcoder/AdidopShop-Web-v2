@@ -8,10 +8,7 @@ namespace AdidopShop.Controllers
         {
             return View();
         }
-        public IActionResult Profile()
-        {
-            return View();
-        }
+       
         public IActionResult Login()
         {
             return View();
