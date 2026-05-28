@@ -317,6 +317,9 @@
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-3\.5 {
     margin-top: calc(var(--spacing) * 3.5);
   }
@@ -409,6 +412,9 @@
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
+  }
+  .h-\[100vh\] {
+    height: 100vh;
   }
   .h-\[300px\] {
     height: 300px;
