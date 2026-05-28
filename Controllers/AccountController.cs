@@ -4,7 +4,7 @@ namespace AdidopShop.Controllers
 {
     public class AccountController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Profile()
         {
             return View();
         }
@@ -17,6 +17,18 @@ namespace AdidopShop.Controllers
             return View();
         }
         public IActionResult Register()
+        {
+            return View();
+        }
+        public IActionResult OrderHistory()
+        {
+            return View();
+        }
+        public IActionResult Location()
+        {
+            return View();
+        }
+        public IActionResult AdidopFamily()
         {
             return View();
         }

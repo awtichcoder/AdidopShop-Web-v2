@@ -8,7 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-gray-50: oklch(98.5% 0.002 247.839);
@@ -347,8 +347,8 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-\[80px\] {
-    margin-top: 80px;
+  .mt-\[90px\] {
+    margin-top: 90px;
   }
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
@@ -370,6 +370,9 @@
   }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
+  }
+  .mb-14 {
+    margin-bottom: calc(var(--spacing) * 14);
   }
   .mb-15 {
     margin-bottom: calc(var(--spacing) * 15);
@@ -645,11 +648,11 @@
       margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
-  .space-x-8 {
+  .space-x-4 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
-      margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
-      margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
+      margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
     }
   }
   .truncate {
@@ -694,6 +697,9 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-gray-200 {
+    border-color: var(--color-gray-200);
+  }
   .border-gray-300 {
     border-color: var(--color-gray-300);
   }
@@ -720,6 +726,9 @@
   }
   .bg-\[\#ebedee\] {
     background-color: #ebedee;
+  }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -1359,6 +1368,15 @@
       gap: calc(var(--spacing) * 12);
     }
   }
+  .md\:space-x-15 {
+    @media (width >= 48rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 0;
+        margin-inline-start: calc(calc(var(--spacing) * 15) * var(--tw-space-x-reverse));
+        margin-inline-end: calc(calc(var(--spacing) * 15) * calc(1 - var(--tw-space-x-reverse)));
+      }
+    }
+  }
   .md\:text-left {
     @media (width >= 48rem) {
       text-align: left;
@@ -1416,6 +1434,29 @@ html, body {
   font-family: var(--font-sans);
 }
 @layer components {
+  .ct-nav-Pro {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 2px;
+    border-color: transparent;
+    padding-bottom: calc(var(--spacing) * 2);
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-gray-500);
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-black);
+      }
+    }
+    &.active {
+      border-color: var(--color-black);
+    }
+    &.active {
+      color: var(--color-black);
+    }
+  }
   .btn-primary {
     border-radius: var(--radius-lg);
     background-color: var(--color-blue-600);
@@ -1504,7 +1545,7 @@ html, body {
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     &:hover {
       @media (hover: hover) {
-        background-color: #F3F4F6;
+        background-color: var(--color-zinc-200);
       }
     }
   }

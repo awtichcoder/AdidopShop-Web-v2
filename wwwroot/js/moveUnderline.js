@@ -1,55 +1,26 @@
-const nav = document.getElementById('nav-menu')
-const items = document.querySelectorAll('.nav-item')
-const underline = document.getElementById('underline')
+// wwwroot/js/moveUnderline.js
 
-function moveUnderline(element, animate = true) {
-  if (!animate) {
-    underline.classList.remove('transition-all', 'duration-300')
-  } else {
-    underline.classList.add('transition-all', 'duration-300')
-  }
+export function moveUnderline() {
+  // 1. Lấy đường dẫn hiện tại trên trình duyệt (Ví dụ: "/Home/OrderHistory")
+  const currentPath = window.location.pathname.toLowerCase()
 
-  const navLeft = nav.getBoundingClientRect().left
-  const itemRect = element.getBoundingClientRect()
+  // 2. Tìm tất cả các thẻ <a> có class 'nav-link'
+  const navLinks = document.querySelectorAll('.nav-link')
 
-  underline.style.width = `${itemRect.width}px`
-  underline.style.left = `${itemRect.left - navLeft + nav.scrollLeft}px`
-}
+  navLinks.forEach((link) => {
+    // Lấy giá trị href của thẻ a và chuyển về chữ thường để so sánh chuẩn xác
+    const linkPath = link.getAttribute('href').toLowerCase()
 
-let activeItem = null
-items.forEach((item, index) => {
-  if (window.location.pathname === item.getAttribute('href')) {
-    activeItem = item
-    item.classList.remove('text-zinc-500')
-    item.classList.add('text-zinc-950', 'font-semibold')
-    item.setAttribute('data-index', index)
-  }
-})
-
-if (!activeItem) {
-  activeItem = items[0]
-  activeItem.classList.add('text-zinc-950', 'font-semibold')
-}
-
-const prevIndex = sessionStorage.getItem('prevNavIndex')
-const currentIndex = activeItem.getAttribute('data-index')
-
-if (prevIndex !== null && prevIndex !== currentIndex && items[prevIndex]) {
-  moveUnderline(items[prevIndex], false)
-
-  setTimeout(() => {
-    moveUnderline(activeItem, true)
-  }, 50)
-} else {
-  setTimeout(() => moveUnderline(activeItem, false), 50)
-}
-
-items.forEach((item, index) => {
-  item.addEventListener('click', () => {
-    sessionStorage.setItem('prevNavIndex', currentIndex || 0)
+    // 3. Nếu đường dẫn trùng khớp (hoặc đường dẫn hiện tại chứa href của thẻ a)
+    if (
+      currentPath === linkPath ||
+      (linkPath !== '/' && currentPath.startsWith(linkPath))
+    ) {
+      // Thêm class 'active' để kích hoạt style gạch chân của Tailwind
+      link.classList.add('active')
+    } else {
+      // Đảm bảo các thẻ khác không bị gạch chân nhầm
+      link.classList.remove('active')
+    }
   })
-})
-
-window.addEventListener('resize', () => {
-  if (activeItem) moveUnderline(activeItem, false)
-})
+}
