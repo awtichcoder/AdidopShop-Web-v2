@@ -30,6 +30,49 @@ yarn dev
 
 - **How it looks:** [Download MongoDB v8.3.2 (MSI)](https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-8.3.2-signed.msi)
 
+# 🐳 Docker Desktop Setup & Environment Guide
+
+A professional, streamlined guide to installing, configuring, and verifying **Docker Desktop** on Windows using the **WSL 2** backend.
+
+---
+
+## 📌 Prerequisites
+
+Before initiating the installation, ensure that hardware virtualization is active on your host system:
+
+1. Open **Task Manager** (`Ctrl + Shift + Esc`).
+2. Navigate to the **Performance** tab and select **CPU**.
+3. Verify that **Virtualization** is marked as **Enabled**.
+
+---
+
+## 🚀 Installation Workflow
+
+### 1. Download the Installer
+Get the latest stable production build directly from the official repository:
+👉 **[Download Docker Desktop Official](https://www.docker.com/products/docker-desktop/)**
+
+### 2. Configuration Setup
+* Launch `Docker Desktop Installer.exe`.
+* **Crucial:** Ensure the **"Use WSL 2 instead of Hyper-V"** checkbox remains **selected** for native Linux performance.
+* Complete the setup wizard and select **Close and restart** to safely reboot your operating system.
+
+### 3. Initialization
+* Launch the **Docker Desktop** GUI application.
+* Click **Accept** on the Subscription Service Agreement screen.
+* You may safely select **Skip** on the welcome survey to access the primary dashboard immediately.
+
+---
+
+## 🛠️ Troubleshooting Common Failures
+
+### ❌ Error: "Windows Subsystem for Linux must be updated"
+If the automated backend update aborts during setup, force a manual update:
+1. Launch **PowerShell** or **Command Prompt** with **Administrator privileges**.
+2. Execute the following system command:
+```bash
+   wsl --update
+```
 # 📁 Lưu ý về cấu trúc
 
 wwwroot/css/tailwind.css: File CSS gốc (Chứa @import "tailwindcss";).
