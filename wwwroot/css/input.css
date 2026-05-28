@@ -10,13 +10,15 @@ body {
   font-family: var(--font-sans);
 }
 @layer components {
+  .ct-nav-Pro {
+    @apply text-gray-500 font-medium pb-2 border-b-2 border-transparent hover:text-black transform duration-200 [&.active]:text-black [&.active]:border-black;
+  }
   .btn-primary {
     @apply px-6 py-2 bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700 transition-all active:scale-95 shadow-md;
   }
   .ct-subheadline {
     @apply flex justify-center items-center mb-24;
   }
-
   .ct-subheadline-deco-line {
     @apply w-8 h-px bg-gray-200;
   }
@@ -29,6 +31,9 @@ body {
   }
   .ct-menuToggle {
     @apply rounded-md p-3 hover:bg-[#232323] transition-opacity;
+  }
+  .ct-menuToggle1 {
+    @apply rounded-md p-3 hover:bg-zinc-200 transition-opacity;
   }
   .ct-tabBtn {
     @apply text-white px-3 py-1.5 rounded-sm cursor-pointer transition-all duration-200;
