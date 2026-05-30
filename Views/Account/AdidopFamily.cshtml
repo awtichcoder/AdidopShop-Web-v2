@@ -1,14 +1,129 @@
 @{
-    ViewData["Title"] = "Adidop Family | Adidop ";
+    ViewData["Title"] = "Adidop Family | Adidop";
     Layout = "~/Views/Shared/_LayoutProduct.cshtml";
 }
-<div class="relative w-72 mt-8">
-    <input type="text" id="outlined_input" placeholder=" "
-           class="peer block w-full px-4 py-3 text-base text-gray-900 bg-transparent border-2 border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 transition-colors" />
-    <label for="outlined_input" class="absolute left-3 top-3 px-1 bg-white text-gray-500 text-base transition-all duration-200 transform origin-left pointer-events-none 
-        -translate-y-6 scale-75 
-        peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 
-        peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600">
-        Outlined
-    </label>
-</div>
+<div class="bg-white text-gray-900 antialiased max-w-3xl mx-auto px-4 py-8 sm:py-12">
+
+    <header class="border-b border-gray-900 pb-6 mb-8">
+        <p class="text-xs font-semibold tracking-widest text-gray-500 uppercase mb-1">Loyal Customer Community
+        </p>
+        <h1 class="text-2xl sm:text-4xl font-black tracking-tight uppercase text-gray-900 mb-4">
+            ADIDOP FAMILY
+        </h1>
+
+        <nav class="flex space-x-4 text-sm font-bold uppercase tracking-wider">
+            <a asp-action="Location" class="text-gray-400 hover:text-gray-900 transition-colors">Franchise</a>
+            <span class="text-gray-300">/</span>
+            <a class="text-gray-900 border-b border-gray-900 pb-1">Adidop Family</a>
+        </nav>
+    </header>
+
+    <div class="space-y-10">
+
+        <section class="space-y-3">
+            <h2 class="text-xl sm:text-2xl font-bold tracking-tight text-gray-900">
+                Welcome to the ADIDOP Family
+            </h2>
+            <div class="text-gray-700 leading-relaxed space-y-3">
+                <p>
+                    <span class="font-bold text-gray-950">ADIDOP FAMILY</span> is an exclusive privileges program
+                    designed
+                    to reward our friends and customers who have supported us every step of the way.
+                </p>
+                <p>
+                    Beyond ordinary point collection, as a member of the ADIDOP family you will get early access to
+                    limited
+                    collections, specialized shoe care privileges, and a range of member-only promotions.
+                </p>
+            </div>
+        </section>
+
+        <section class="space-y-4">
+            <h2 class="text-xl sm:text-2xl font-bold tracking-tight text-gray-900">
+                Membership Tier System
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+                The system automatically accumulates your spending based on the phone number used at all franchise
+                stores
+                and online channels nationwide:
+            </p>
+
+            <div class="overflow-x-auto pt-2">
+                <table class="w-full text-left text-sm text-gray-700 border-collapse">
+                    <thead>
+                        <tr class="border-b-2 border-gray-900 text-gray-950 font-bold">
+                            <th class="py-2 pr-4">Tier</th>
+                            <th class="py-2 px-4">Accumulated Spending</th>
+                            <th class="py-2 pl-4 text-right">Default Benefits</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-3 pr-4 font-bold text-gray-900">Dop-Bronze</td>
+                            <td class="py-3 px-4">Successful account registration or first purchase.</td>
+                            <td class="py-3 pl-4 text-right font-bold text-gray-950">5% Discount</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 pr-4 font-bold text-gray-900">Dop-Silver</td>
+                            <td class="py-3 px-4">Total accumulated spending reaches 5,000,000 VND within 1 year.</td>
+                            <td class="py-3 pl-4 text-right font-bold text-gray-950">10% Discount</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 pr-4 font-bold text-gray-900">Dop-Gold</td>
+                            <td class="py-3 px-4">Total accumulated spending reaches 15,000,000 VND within 1 year.</td>
+                            <td class="py-3 pl-4 text-right font-bold text-gray-950">15% Discount</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="space-y-4">
+            <h2 class="text-xl sm:text-2xl font-bold tracking-tight text-gray-900">
+                Exclusive Promotions & Experiences
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+
+                <div class="space-y-1.5">
+                    <h3 class="font-bold text-gray-950">Member Day (Dop-Day):</h3>
+                    <p class="text-sm">On the 15th of each month, all ADIDOP FAMILY members shopping in-store receive
+                        an additional 5% off (applies together with the tier discount).</p>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <h3 class="font-bold text-gray-950">Birthday Gift:</h3>
+                        <p class="text-sm">During the birthday month, Silver and Gold members receive a 20% discount voucher
+                            and a limited-edition gift sent directly from headquarters.</p>
+                        </div>
+
+                        <div class="space-y-1.5">
+                            <h3 class="font-bold text-gray-950">Priority Warranty & Returns:</h3>
+                            <p class="text-sm">Gold members are eligible for free size or style exchanges within 30 days and
+                                receive
+                                lifetime priority warranty for glue and stitching.</p>
+                            </div>
+
+                            <div class="space-y-1.5">
+                                <h3 class="font-bold text-gray-950">Service Points Redemption:</h3>
+                                <p class="text-sm">Every shoe purchase is converted into reward points (Dop-Point). You can redeem
+                                    these
+                                    points for deep-clean shoe services or custom shoe painting on request.</p>
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <!-- Note -->
+                        <section class="bg-gray-50 p-4 border-l-2 border-gray-900 text-sm text-gray-600 italic">
+                            * Note: Tier benefits apply to all full-price product lines and do not stack with system-wide clearance
+                            events such as Black Friday.
+                        </section>
+
+                    </div>
+
+                    <footer class="border-t border-gray-200 mt-16 pt-4 text-center text-xs text-gray-400">
+                        © ADIDOP FAMILY Loyalty Community
+                    </footer>
+
+                </div>
