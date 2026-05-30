@@ -2,4 +2,65 @@
     ViewData["Title"] = "Profile | Adidop ";
     Layout = "~/Views/Shared/_LayoutProduct.cshtml";
 }
-<div class="w-full h-[100vh] mt-[90px] bg-amber-300"> Profile</div>
+<h1 class="ct-heading2 text-center">Profile</h1>
+<div class="max-w-3xl mx-auto mb-14 p-6 md:p-8 bg-white text-gray-900">
+    <div class="ct-para1 ">
+        <h2>Basic Information</h2>
+    </div>
+    <form action="" class="space-y-4">
+        <div>
+            <input type="text" id="full_name" placeholder="Họ và tên" required class="ct-FormProfile">
+        </div>
+        <div>
+            <input type="tel" id="phone_number" placeholder="Số điện thoại" required class="ct-FormProfile">
+        </div>
+        <div>
+            <input type="email" id="email" placeholder="Email" required class="ct-FormProfile">
+        </div>
+        <div class="relative">
+            <input type="password" id="password" placeholder="Mật khẩu" required class="ct-FormProfile">
+            <button type="button" id="toggle_password" class="ct-toggle_password">
+                <svg id="eye_icon" class="h-5 w-5 text-gray-400 hover:text-gray-600 transition-colors" fill="none"
+                     viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+            </button>
+        </div>
+
+        <div>
+            <input type="text" id="street_details" placeholder="Địa chỉ cụ thể (Số nhà, tên đường...)" required
+                   class="ct-FormProfile">
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 ">
+            <div class="relative">
+                <select name="" id="province_city" class="ct-FormProfile bg-white" required>
+                    <option value="" disabled selected>Tỉnh / Thành phố </option>
+                </select>
+            </div>
+            <div class="relative">
+                <select name="" id="district" class="ct-FormProfile bg-white" required>
+                    <option value="" disabled selected>Quận / Huyện </option>
+                </select>
+            </div>
+            <div class="relative">
+                <select name="" id="ward" class="ct-FormProfile bg-white" required>
+                    <option value="" disabled selected>Phường / Xã </option>
+                </select>
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 pt-6">
+            <button type="submit"
+                    class="bg-[#222222] text-white px-6 py-3 rounded font-semibold hover:bg-black transition-colors cursor-pointer">
+                Cập nhật
+            </button>
+            <button type="button"
+                    class="border border-[#222222] text-[#222222] bg-white px-6 py-3 rounded font-semibold hover:bg-gray-300 transition-colors cursor-pointer">
+                Đăng xuất
+            </button>
+        </div>
+    </form>
+</div>
